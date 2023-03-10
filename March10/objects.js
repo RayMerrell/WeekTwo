@@ -55,6 +55,6 @@ const objPerson = {
     _arrFavSongs:[]
 };
 
-objPerson._arrFavSongs =["Nektar - Recycled", "Led Zeppelin - Kashmir", "Rush - 2112", "The The - Sweet bird of truth", "Marillion - Lavender"];
+objPerson._arrFavSongs =["Nektar - Recycled", "Led Zeppelin - Kashmir", "Rush - 2112", "The The - Sweet bird of truth", "Marillion - Kayleigh", "Jethro Tull - Thick as a brick"];
 
 console.log(objPerson._strName + "'s favourite songs are " + objPerson._arrFavSongs);
