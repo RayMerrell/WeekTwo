@@ -5,4 +5,6 @@ const funFactorial = (n) =>{
         return (n * funFactorial(n-1));
     }
 }
+
 console.log(funFactorial(4));
+
