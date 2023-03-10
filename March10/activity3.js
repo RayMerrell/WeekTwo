@@ -14,11 +14,10 @@ const objCoffeeShop={
     ],
     arrFoodOrder:[],
     arrDrinksOrder:[],
-    numOrderTotal:0, //this will NOT initialise to a number i can use in statements without getting a NaN error
+    numOrderTotal:0, 
     strOrderFeedBack:"Your order ",
 
     funFoodOrdered(){
-        this.numOrderTotal = 0; //to get around the NaN none-initialisation problem
         this.strOrderFeedBack = "Your food order of ";
         for (let x = 0; x < this.arrFoodOrder.length;x++){
             for (let c = 0; c < this.arrFood.length;c++){
@@ -31,7 +30,6 @@ const objCoffeeShop={
         console.log(this.strOrderFeedBack +  "comes to: " + this.numOrderTotal);
     },
     funDrinksOrdered(){
-        this.numOrderTotal = 0; //to get around the NaN none-initialisation problem
         this.strOrderFeedBack = "Your drinks order of ";
         for (let x = 0; x < this.arrDrinksOrder.length;x++){
             for (let c = 0; c < this.arrDrinks.length;c++){
