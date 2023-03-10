@@ -1,60 +1,87 @@
 // const objPerson = {
-//     _strName : "Ray",
-//     _intAge :"55"
+//     strName : "Ray",
+//     intAge :"55"
 // };
 
-// console.log(objPerson._strName + " is " + objPerson._intAge + " Years old");
+// console.log(objPerson.strName + " is " + objPerson.intAge + " Years old");
 
 // let strOffer = "None";
 // let intTime = 1000;
 
 // const objCafe = {
-//     _strName : "Whitesheep",
-//     _intSeatingCapacity: 100,
-//     _booHasSpecialOffers: true,
-//     _arrDrinks: [
+//     strName : "Whitesheep",
+//     intSeatingCapacity: 100,
+//     booHasSpecialOffers: true,
+//     arrDrinks: [
 //         "Tea",
 //         "Latte",
 //         "Filter Coffee",
 //         "Hot Chocolate"
 //     ],
-//     _strBreakfastOffer : "Free biscuit with tea",
-//     _strLunchOffer: " Free drink with suprisingly priced sandwhich",
-//     _strNoOffer: "Sorry no offers at the moment"
+//     strBreakfastOffer : "Free biscuit with tea",
+//     strLunchOffer: " Free drink with suprisingly priced sandwhich",
+//     strNoOffer: "Sorry no offers at the moment"
 // };
 
 // if (intTime < 1100){
-//     strOffer = objCafe._strBreakfastOffer;
+//     strOffer = objCafe.strBreakfastOffer;
 // }else if (intTime < 1500){
-//     strOffer = objCafe._strLunchOffer;
+//     strOffer = objCafe.strLunchOffer;
 // }else{
-//     strOffer = objCafe._strNoOffer;
+//     strOffer = objCafe.strNoOffer;
 // }
 // console.log(strOffer);
 
 
 
 // const objAlarm = {
-//     _strWeekendAlarm : "No Alarm Needed",
-//     _strWeekdayAlarm: "Get up at 7am",
-//     _strDay : "Friday",
-//     _strAlarm :"None set"
+//     strWeekendAlarm : "No Alarm Needed",
+//     strWeekdayAlarm: "Get up at 7am",
+//     strDay : "Friday",
+//     strAlarm :"None set"
 // };
 
-// if (objAlarm._strDay === "Saturday" || objAlarm._strDay === "Sunday"){
-//     objAlarm._strAlarm = objAlarm._strWeekendAlarm;
+// if (objAlarm.strDay === "Saturday" || objAlarm.strDay === "Sunday"){
+//     objAlarm.strAlarm = objAlarm.strWeekendAlarm;
 // }else{
-//     objAlarm._strAlarm = objAlarm._strWeekdayAlarm;
+//     objAlarm.strAlarm = objAlarm.strWeekdayAlarm;
 // }
-// console.log(objAlarm._strAlarm);
+// console.log(objAlarm.strAlarm);
 
 
-const objPerson = {
-    _strName : "Ray",
-    _intAge :"55",
-    _arrFavSongs:[]
+// const objPerson = {
+//     strName : "Ray",
+//     intAge :"54",
+//     arrFavSongs:[]
+// };
+
+// objPerson.arrFavSongs =["The Cult - She sells sanctuary","Nektar - Recycled", "Led Zeppelin - Kashmir", "Rush - 2112", "The The - Sweet bird of truth", "Marillion - Assassing", "Jethro Tull - Thick as a brick"];
+//console.log("Some of " + objPerson.strName + "'s favourite songs are " + objPerson.arrFavSongs);
+
+let strOffer = "None";
+let intTime = 1000;
+
+const objCafe = {
+    strName : "Whitesheep",
+    intSeatingCapacity: 100,
+    booHasSpecialOffers: true,
+    arrDrinks: [
+        "Tea",
+        "Latte",
+        "Filter Coffee",
+        "Hot Chocolate"
+    ],
+    strBreakfastOffer : "Free biscuit with tea",
+    strLunchOffer: " Free drink with suprisingly priced sandwhich",
+    strNoOffer: "Sorry no offers at the moment",
+    funOpenCafe(){
+        if (this.booHasSpecialOffers === true){
+            return ("Time for a special offer");
+        }
+    },
+    funCloseCafe(){
+        console.log("We are now closed, come back tomorrow");
+    }
 };
-
-objPerson._arrFavSongs =["Nektar - Recycled", "Led Zeppelin - Kashmir", "Rush - 2112", "The The - Sweet bird of truth", "Marillion - Kayleigh", "Jethro Tull - Thick as a brick"];
-
-console.log(objPerson._strName + "'s favourite songs are " + objPerson._arrFavSongs);
+objCafe.funOpenCafe();
+objCafe.funCloseCafe();
